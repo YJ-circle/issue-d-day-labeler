@@ -1,20 +1,15 @@
 name: 'D-day Labeler'
 description: '매일 이슈의 D-n 라벨을 ↓1씩, D-day→Overdue 처리하는 액션'
+
+branding:
+  icon: "calendar"
+  color: "blue"
+
 inputs:
   token:
-    description: 'GitHub token'
+    description: "GitHub token"
     required: true
-branding:
-  icon: 'calendar'
-  color: 'blue'
-runs:
-  using: 'composite'
-  steps:
-    - name: Checkout repo
-      uses: actions/checkout@v3
 
-    - name: Decrement D-n / Handle D-day → Overdue
-      uses: actions/github-script@v6
-      with:
-        github-token: ${{ inputs.token }}
-        script-file: script/labeler.js
+runs:
+  using: "node16"
+  main: "dist/index.js"
