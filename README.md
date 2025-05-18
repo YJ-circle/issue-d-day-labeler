@@ -35,3 +35,9 @@ jobs:
 2. 버그, 개선 사항, 새로운 기능 등 자유롭게 Issue를 등록해주세요.
 
 문의 및 제안은 [이슈](https://github.com/YJ-circle/issue-d-day-labeler/issues)를 통해 남겨주세요.
+
+---
+참고자료:
+- https://d2.naver.com/helloworld/8149881
+- https://github.com/naver/d-day-labeler
+- https://devocean.sk.com/blog/techBoardDetail.do?ID=165255
